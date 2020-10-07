@@ -1,0 +1,117 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link rel="stylesheet" href={% static 'css/mystyles.css'%}>
+    <title>MOPEDO</title>
+  </head>
+  <body>
+    <header>
+         <div class="container-fluid" style="background-color: darkturquoise">
+    <div class="row">
+        <div class="col-lg-6" style="padding-left: 10%">
+        <h3>MOPEDO</h3>
+            </div>
+         <div class="col-lg-6" style="padding-left: 20%;margin: auto">
+        <h6>64665656</h6>
+            </div>
+    </div>
+         </div>
+    </header><br><br>
+    <section>
+         <div>
+        <H1>
+            THIS MOPEDO DESCRIPTION<BR>
+            JHGJHGJHGHJH<BR>
+            KJHJHKJH<BR>
+            KLJKKJ
+        </H1>
+    </div><br><br>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-4" >
+            <img src="{% static 'images/bike2.jpg' %}" class="rounded mx-auto d-block" alt="...">
+{#            <h4 style="color:darkred">Service Train</h4>#}
+{#            <p style="color:darkgreen">service train Description#}
+{##}
+{#            hkjhkkhkhkjhkj#}
+{#            nnjkhkjhkjhjkhkjhkj#}
+{#            jhjhjkhjhkjhjhjkhjk</p>#}
+        </div>
+         <div class="col-lg-4">
+             <ul style="color: white">
+                 <li >gfghfhfjhgg</li>
+                 <li>gfghfhfjhgghgghghjgjhgjhghjgjhghjg</li>
+                 <li>gfghfhfjhgghgghghjgjhgjhghjgjhghjg</li>
+                 <li>gfghfhfjhgghgghghjgjhgjhghjgjhghjg</li>
+                 <li>gfghfhfjhgghgghghjgjhgjhghjgjhghjg</li>
+                 <li>gfghfhfjhgghgghghjgjhgjhghjgjhghjg</li>
+             </ul>
+
+        </div>
+        </div>
+            </div><br><br><br>
+           <div  class="container-fluid" style="background-color:darkturquoise;color: white;height:600px;padding:auto;margin:auto" >
+          <div class="row">
+              <div class="col">
+                  <br><br><br><br><br>
+                <h3>kjhkjhkjhkjhjkhjj<br>
+                hgggggggggggghjghjghj<br>
+                jhgjhgjjhjgjhgjhg</h3>
+              </div>
+              <div class="col" style="background-color:darkturquoise;color: white;height:600px;padding:auto;margin:auto">
+                  <br><br>
+                  <form  action="{% url 'formsave' %}" method="post">
+        {% csrf_token %}
+   <div class="form-group row">
+    <label for="firstname" class="col-sm-2 col-form-label">FirstName</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="FirstName" required>
+    </div>
+  </div>
+           <div class="form-group row">
+    <label for="lastname" class="col-sm-2 col-form-label">LastName</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="LastName" required>
+    </div>
+  </div>
+           <div class="form-group row">
+    <label for="email" class="col-sm-2 col-form-label">EmailID</label>
+    <div class="col-sm-5">
+      <input type="email" class="form-control" id="email"  name="email" placeholder="EmailID" required>
+    </div>
+  </div>
+           <div class="form-group row">
+    <label for="mobilenumber" class="col-sm-2 col-form-label">MobileNumber:</label>
+    <div class="col-sm-5">
+      <input type="number" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="MobileNumber" required>
+    </div>
+  </div>
+         <div class="form-group row">
+    <label for="message" class="col-sm-2 col-form-label"> Message</label>
+             <div class="col-sm-5">
+    <textarea class="form-control" id="message" name="message" rows="3" cols="5"></textarea>
+             </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit" style="text-align: center;">Submit form</button>
+
+</form>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: darkgoldenrod;
+    text-align: center;
+    font-family:Verdana, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif
+}
+#id1{
+    width:50%;
+    height: 50%;
+}
+form{
+     font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", cursive;
+}
+.li1{
+    color:white;
+}
